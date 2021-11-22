@@ -9,6 +9,7 @@ import dagger.hilt.components.SingletonComponent
 import hu.jcp.fridge.feature_food.data.data_source.FoodDatabase
 import hu.jcp.fridge.feature_food.data.repository.FoodRepositoryImpl
 import hu.jcp.fridge.feature_food.domain.repository.FoodRepository
+import hu.jcp.fridge.feature_food.domain.use_case.AddFood
 import hu.jcp.fridge.feature_food.domain.use_case.DeleteFood
 import hu.jcp.fridge.feature_food.domain.use_case.FoodUseCases
 import hu.jcp.fridge.feature_food.domain.use_case.GetFoods
@@ -39,7 +40,8 @@ object AppModule {
     fun provideFoodUseCase(repository: FoodRepository) : FoodUseCases{
         return FoodUseCases(
             getFoods = GetFoods(repository),
-            deleteFood = DeleteFood(repository)
+            deleteFood = DeleteFood(repository),
+            addFood = AddFood(repository)
         )
     }
 }

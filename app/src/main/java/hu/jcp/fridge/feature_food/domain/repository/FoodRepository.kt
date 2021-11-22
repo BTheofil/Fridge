@@ -1,6 +1,6 @@
 package hu.jcp.fridge.feature_food.domain.repository
 
-import hu.jcp.fridge.feature_food.data.data_source.model.Food
+import hu.jcp.fridge.feature_food.domain.model.Food
 import kotlinx.coroutines.flow.Flow
 
 interface FoodRepository {

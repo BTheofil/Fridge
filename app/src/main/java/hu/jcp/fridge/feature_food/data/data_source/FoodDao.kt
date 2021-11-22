@@ -1,7 +1,7 @@
 package hu.jcp.fridge.feature_food.data.data_source
 
 import androidx.room.*
-import hu.jcp.fridge.feature_food.data.data_source.model.Food
+import hu.jcp.fridge.feature_food.domain.model.Food
 import kotlinx.coroutines.flow.Flow
 
 @Dao

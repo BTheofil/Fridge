@@ -1,4 +1,4 @@
-package hu.jcp.fridge.feature_food.data.data_source.model
+package hu.jcp.fridge.feature_food.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -15,3 +15,4 @@ enum class MEASURE{
     PIECE, LITER, KG
 }
 
+class InvalidFoodException(message: String) : Exception(message)

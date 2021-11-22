@@ -1,7 +1,7 @@
 package hu.jcp.fridge.feature_food.data.repository
 
 import hu.jcp.fridge.feature_food.data.data_source.FoodDao
-import hu.jcp.fridge.feature_food.data.data_source.model.Food
+import hu.jcp.fridge.feature_food.domain.model.Food
 import hu.jcp.fridge.feature_food.domain.repository.FoodRepository
 import kotlinx.coroutines.flow.Flow
 
