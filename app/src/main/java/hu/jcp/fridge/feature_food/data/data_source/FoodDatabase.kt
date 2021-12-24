@@ -6,7 +6,8 @@ import hu.jcp.fridge.feature_food.domain.model.Food
 
 @Database(
     entities = [Food::class],
-    version = 1
+    version = 1,
+    exportSchema = false
 )
 abstract class FoodDatabase : RoomDatabase(){
 
